@@ -1,0 +1,507 @@
+fileFormatVersion: 2
+guid: 1c49f51e5aa0462448f54c6b287fd0ba
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4364175728146927075
+    second: Basic Holy 3x_0
+  - first:
+      213: -7473357751721854357
+    second: Basic Holy 3x_1
+  - first:
+      213: 815159939189947780
+    second: Basic Holy 3x_2
+  - first:
+      213: -7251889965118858334
+    second: Basic Holy 3x_3
+  - first:
+      213: 3491457634910006994
+    second: Basic Holy 3x_4
+  - first:
+      213: 1838606304211273503
+    second: Basic Holy 3x_5
+  - first:
+      213: -3450230162940064453
+    second: Basic Holy 3x_6
+  - first:
+      213: -2775235636356079147
+    second: Basic Holy 3x_7
+  - first:
+      213: -8461402474661244140
+    second: Basic Holy 3x_8
+  - first:
+      213: 1102315151619929824
+    second: Basic Holy 3x_9
+  - first:
+      213: -724254948001983191
+    second: Basic Holy 3x_10
+  - first:
+      213: -864424526931140351
+    second: Basic Holy 3x_11
+  - first:
+      213: -144829577552272060
+    second: Basic Holy 3x_12
+  - first:
+      213: -3440316135348058168
+    second: Basic Holy 3x_13
+  - first:
+      213: -703541590074832120
+    second: Basic Holy 3x_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Basic Holy 3x_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 147
+        width: 62
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d12bb623c455f63c0800000000000000
+      internalID: -4364175728146927075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Basic Holy 3x_1
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 147
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6af43968bc494890800000000000000
+      internalID: -7473357751721854357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Basic Holy 3x_2
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 147
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48dbb8255a7005b00800000000000000
+      internalID: 815159939189947780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Basic Holy 3x_3
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 147
+        width: 62
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2abded6bf7c1c5b90800000000000000
+      internalID: -7251889965118858334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Basic Holy 3x_4
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 147
+        width: 62
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dee22d6836247030800000000000000
+      internalID: 3491457634910006994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Basic Holy 3x_5
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 83
+        width: 62
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f178e4c31ba048910800000000000000
+      internalID: 1838606304211273503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Basic Holy 3x_6
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 75
+        width: 58
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3d8e9862f15e10d0800000000000000
+      internalID: -3450230162940064453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Basic Holy 3x_7
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 75
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d1adfe74e16c79d0800000000000000
+      internalID: -2775235636356079147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Basic Holy 3x_8
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 75
+        width: 62
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 413943c974f039a80800000000000000
+      internalID: -8461402474661244140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Basic Holy 3x_9
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 75
+        width: 62
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e636d24ac53c4f00800000000000000
+      internalID: 1102315151619929824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Basic Holy 3x_10
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 3
+        width: 58
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 925d58946fde2f5f0800000000000000
+      internalID: -724254948001983191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Basic Holy 3x_11
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 3
+        width: 62
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10162210972f004f0800000000000000
+      internalID: -864424526931140351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Basic Holy 3x_12
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 3
+        width: 62
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 445e60d34467dfdf0800000000000000
+      internalID: -144829577552272060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Basic Holy 3x_13
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 3
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c7c885d3ba8140d0800000000000000
+      internalID: -3440316135348058168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Basic Holy 3x_14
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 3
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80b40eeb6a48c36f0800000000000000
+      internalID: -703541590074832120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Basic Holy 3x_0: -4364175728146927075
+      Basic Holy 3x_1: -7473357751721854357
+      Basic Holy 3x_10: -724254948001983191
+      Basic Holy 3x_11: -864424526931140351
+      Basic Holy 3x_12: -144829577552272060
+      Basic Holy 3x_13: -3440316135348058168
+      Basic Holy 3x_14: -703541590074832120
+      Basic Holy 3x_2: 815159939189947780
+      Basic Holy 3x_3: -7251889965118858334
+      Basic Holy 3x_4: 3491457634910006994
+      Basic Holy 3x_5: 1838606304211273503
+      Basic Holy 3x_6: -3450230162940064453
+      Basic Holy 3x_7: -2775235636356079147
+      Basic Holy 3x_8: -8461402474661244140
+      Basic Holy 3x_9: 1102315151619929824
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

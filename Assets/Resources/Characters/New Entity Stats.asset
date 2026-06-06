@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33d2270bcba8c624b9f524b4a0c4fc3c, type: 3}
+  m_Name: New Entity Stats
+  m_EditorClassIdentifier: Assembly-CSharp::EntityStats
+  enemyName: Skullist
+  maxHealth: 3d8
+  armorClass: 12
+  STR: 11
+  DEX: 14
+  CON: 12
+  INT: 10
+  WIS: 13
+  CHA: 8
+  range: 0
+  combatSpeed: 30
+  sprite: {fileID: 1541560808, guid: 136bad6a4716c7345ac848e4fa2241c1, type: 3}
+  attacks:
+  - name: ShortSword
+    diceThrow: '"1d6"'
+    damageType: 1
+  - name: LightCrossbow
+    diceThrow: '"1d6"'
+    damageType: 0
