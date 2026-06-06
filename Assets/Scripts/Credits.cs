@@ -7,6 +7,10 @@ public class Credits : MonoBehaviour
     // DeepDiveGameStudio (monstra s animacemi)
     // Bragorn (inventář)
     // ELV Games (inventář, retro)
+    // kill4spika (buildings)
+    // rowdy41 (chests and small details, UI)
+    // Glionox (most of the items)
+    
     void Start()
     {
         
