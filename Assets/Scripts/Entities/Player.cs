@@ -10,7 +10,6 @@ public class Player : Entity
     private Vector3 targetPos;
     public bool attackedThisTurn = false;
     private bool isMoving = false;
-    private Rigidbody2D rb;
 
     void Start()
     {
@@ -18,8 +17,6 @@ public class Player : Entity
         health = maxHealth;
         armorClass = 15;
         moveSpeed = 3f;
-
-        rb = GetComponent<Rigidbody2D>();
 
         UpdateHealthBar();
 
@@ -43,10 +40,7 @@ public class Player : Entity
         {
             isMoving = false;
         }
-    }
 
-    void FixedUpdate()
-    {
         if (isMoving)
         {
             Vector2 newPos = Vector2.MoveTowards(rb.position, targetPos, moveSpeed * Time.fixedDeltaTime);

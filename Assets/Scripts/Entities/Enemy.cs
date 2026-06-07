@@ -10,6 +10,7 @@ public class Enemy : Entity
         maxHealth = 20;
         health = maxHealth;
         armorClass = 10;
+        moveSpeed = 3f;
 
         UpdateHealthBar();
 

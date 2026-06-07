@@ -10,6 +10,7 @@ public class CombatManager : MonoBehaviour
         Start,
         PlayerTurn,
         EnemyTurn,
+        Busy,
         Won,
         Lost
     }
@@ -21,6 +22,8 @@ public class CombatManager : MonoBehaviour
     [Header("Combat UI")]
     public GameObject combatPanel;
     public Button attackButton;
+    public Button rangedAttackButton;
+    public Button potionButton;
 
     [Header("Combatants")]
     public Player player;
@@ -42,6 +45,8 @@ public class CombatManager : MonoBehaviour
         combatIsActive = false;
         combatPanel.SetActive(false);
         attackButton.interactable = false;
+        rangedAttackButton.interactable = false;
+        potionButton.interactable = false;
     }
 
     private void MakeTurnOrder()
@@ -76,13 +81,15 @@ public class CombatManager : MonoBehaviour
         else
         {
             currentState = CombatState.EnemyTurn;
-            StartCoroutine(EnemyTurn());
+            EnemyAttack();
         }
     }
 
     private void PlayerTurn()
     {
         attackButton.interactable = true;
+        rangedAttackButton.interactable = true;
+        potionButton.interactable = true;
     }
 
     public void OnAttackButton()
@@ -90,34 +97,58 @@ public class CombatManager : MonoBehaviour
         if(currentState != CombatState.PlayerTurn || !combatIsActive) return;
 
         attackButton.interactable = false;
+        rangedAttackButton.interactable = false;
+        potionButton.interactable = false;
 
-        MakeTurn(player, currentEnemy);
+        currentState = CombatState.Busy;
 
-        if(CheckForEndCombat()) return;
-
-        currentState = CombatState.EnemyTurn;
-        StartCoroutine(EnemyTurn());
+        StartCoroutine(player.AttackSequence(currentEnemy, EndPlayerTurn));
     }
 
-    private IEnumerator EnemyTurn()
+    private void EndPlayerTurn()
     {
-        yield return new WaitForSeconds(1.5f);
-
-        if(!combatIsActive) yield break;
-
-        MakeTurn(currentEnemy, player);
-
-        if(CheckForEndCombat()) yield break;
-
+        if(CheckForEndCombat()) return;
+        currentState = CombatState.EnemyTurn;
+        EnemyAttack();
+    }
+    private void EnemyAttack()
+    {
+        StartCoroutine(currentEnemy.AttackSequence(player, EndEnemyTurn));
+    }
+    private void EndEnemyTurn()
+    {
+        if(CheckForEndCombat()) return;
         currentState = CombatState.PlayerTurn;
         PlayerTurn();
     }
 
-    private void MakeTurn(Entity attacker, Entity defender)
+
+    public void OnRangedAttackButton()
     {
-        int damage = attacker.RollDamage();
-        defender.health -= damage;
-        defender.UpdateHealthBar();
+        if(currentState != CombatState.PlayerTurn || !combatIsActive) return;
+
+        attackButton.interactable = false;
+        rangedAttackButton.interactable = false;
+        potionButton.interactable = false;
+
+        if(CheckForEndCombat()) return;
+
+        currentState = CombatState.EnemyTurn;
+    }
+
+    public void OnPotionButton()
+    {
+        if(currentState != CombatState.PlayerTurn || !combatIsActive) return;
+
+        attackButton.interactable = false;
+        rangedAttackButton.interactable = false;
+        potionButton.interactable = false;
+
+        currentState = CombatState.Busy;
+        
+        player.UsePotion();
+
+        EndPlayerTurn();
     }
 
     private bool CheckForEndCombat()
