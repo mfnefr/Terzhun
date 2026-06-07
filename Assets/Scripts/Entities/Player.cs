@@ -6,10 +6,11 @@ public class Player : Entity
     [Header("Object References")]
     public InventoryManager inventoryManager;
 
-    [Header("Player Stettings")]
+    [Header("Player Settings")]
     private Vector3 targetPos;
     public bool attackedThisTurn = false;
     private bool isMoving = false;
+    private Rigidbody2D rb;
 
     void Start()
     {
@@ -17,6 +18,8 @@ public class Player : Entity
         health = maxHealth;
         armorClass = 15;
         moveSpeed = 3f;
+
+        rb = GetComponent<Rigidbody2D>();
 
         UpdateHealthBar();
 
@@ -36,13 +39,18 @@ public class Player : Entity
             isMoving = true;
         }
 
+        if (isMoving && Vector2.Distance(transform.position, targetPos) < 0.1f)
+        {
+            isMoving = false;
+        }
+    }
+
+    void FixedUpdate()
+    {
         if (isMoving)
         {
-            transform.position = Vector3.MoveTowards(transform.position, targetPos, moveSpeed*Time.deltaTime);
-            if(Vector3.Distance(transform.position, targetPos) < 0.1f)
-            {
-                isMoving = false;
-            }
+            Vector2 newPos = Vector2.MoveTowards(rb.position, targetPos, moveSpeed * Time.fixedDeltaTime);
+            rb.MovePosition(newPos);
         }
     }
 }

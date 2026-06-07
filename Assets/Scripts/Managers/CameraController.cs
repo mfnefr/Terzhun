@@ -12,7 +12,7 @@ public class CameraController : MonoBehaviour
         ZoomIn();
     }
 
-    void Update()
+    void LateUpdate()
     {
         // zajištění pohybu kamery za hráčem
         if (target != null)
