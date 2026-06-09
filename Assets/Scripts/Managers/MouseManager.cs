@@ -16,19 +16,19 @@ public class MouseManager : MonoBehaviour
 
         if(currentActiveItem != null && currentlyHeldItem != null && currentlyHeldItem.itemID == currentActiveItem.itemID && currentActiveItem.isStackable)
         {
-            currentSlot.inventoryManager.StackInInventory(currentSlot, currentlyHeldItem);
+            InventoryManager.Instance.StackInInventory(currentSlot, currentlyHeldItem);
             currentlyHeldItem = null;
             return;
         }
 
         if(currentSlot.item != null)
         {
-            currentSlot.inventoryManager.ClearItemSlot(currentSlot);
+            InventoryManager.Instance.ClearItemSlot(currentSlot);
         }
 
         if(currentlyHeldItem != null)
         {
-            currentSlot.inventoryManager.PlaceInInventory(currentSlot, currentlyHeldItem);
+            InventoryManager.Instance.PlaceInInventory(currentSlot, currentlyHeldItem);
         }
 
         currentlyHeldItem = currentActiveItem;
@@ -50,7 +50,7 @@ public class MouseManager : MonoBehaviour
 
         if(currentSlot.item.itemCount <= 0)
         {
-            currentSlot.inventoryManager.ClearItemSlot(currentSlot);
+            InventoryManager.Instance.ClearItemSlot(currentSlot);
         }
     }
 }

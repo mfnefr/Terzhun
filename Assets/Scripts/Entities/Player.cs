@@ -3,9 +3,6 @@ using UnityEngine.InputSystem;
 
 public class Player : Entity
 {
-    [Header("Object References")]
-    public InventoryManager inventoryManager;
-
     [Header("Player Settings")]
     private Vector3 targetPos;
     public bool attackedThisTurn = false;
@@ -25,7 +22,7 @@ public class Player : Entity
 
     void Update()
     {
-        if(!GameManager.Instance.IsGameActive() || inventoryManager.isInventoryOpen) return;
+        if(!GameManager.Instance.IsGameActive() || InventoryManager.Instance.isInventoryOpen) return;
 
         // pohyb hráče
         if (Mouse.current.leftButton.wasPressedThisFrame)

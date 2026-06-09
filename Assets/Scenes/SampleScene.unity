@@ -205,6 +205,7 @@ GameObject:
   - component: {fileID: 11687363}
   - component: {fileID: 11687365}
   - component: {fileID: 11687364}
+  - component: {fileID: 11687366}
   m_Layer: 5
   m_Name: Icon
   m_TagString: Untagged
@@ -269,6 +270,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 11687362}
   m_CullTransparentMesh: 1
+--- !u!114 &11687366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11687362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 11687364}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &23538313
 GameObject:
   m_ObjectHideFlags: 0
@@ -692,6 +737,7 @@ GameObject:
   - component: {fileID: 62789054}
   - component: {fileID: 62789053}
   - component: {fileID: 62789052}
+  - component: {fileID: 62789055}
   m_Layer: 5
   m_Name: InventorySlot (15)
   m_TagString: Untagged
@@ -735,7 +781,6 @@ MonoBehaviour:
   item: {fileID: 0}
   icon: {fileID: 526478123}
   itemCountText: {fileID: 1428011143}
-  inventoryManager: {fileID: 2023521102}
 --- !u!114 &62789053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -774,6 +819,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 62789050}
   m_CullTransparentMesh: 1
+--- !u!114 &62789055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 62789050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca8b485478bd4e42abb1a38f92aaf34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  iconDisplay: {fileID: 0}
+  button: {fileID: 0}
+  text: {fileID: 0}
+  currentItem: {fileID: 0}
 --- !u!1 &71331521
 GameObject:
   m_ObjectHideFlags: 0
@@ -936,6 +997,7 @@ GameObject:
   - component: {fileID: 87906273}
   - component: {fileID: 87906272}
   - component: {fileID: 87906271}
+  - component: {fileID: 87906274}
   m_Layer: 5
   m_Name: InventorySlot (32)
   m_TagString: Untagged
@@ -979,7 +1041,6 @@ MonoBehaviour:
   item: {fileID: 0}
   icon: {fileID: 1224204951}
   itemCountText: {fileID: 250355463}
-  inventoryManager: {fileID: 2023521102}
 --- !u!114 &87906272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1018,6 +1079,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 87906269}
   m_CullTransparentMesh: 1
+--- !u!114 &87906274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 87906269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca8b485478bd4e42abb1a38f92aaf34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  iconDisplay: {fileID: 0}
+  button: {fileID: 0}
+  text: {fileID: 0}
+  currentItem: {fileID: 0}
 --- !u!1 &105190828
 GameObject:
   m_ObjectHideFlags: 0
@@ -1030,6 +1107,7 @@ GameObject:
   - component: {fileID: 105190832}
   - component: {fileID: 105190831}
   - component: {fileID: 105190830}
+  - component: {fileID: 105190833}
   m_Layer: 5
   m_Name: InventorySlot (9)
   m_TagString: Untagged
@@ -1073,7 +1151,6 @@ MonoBehaviour:
   item: {fileID: 0}
   icon: {fileID: 839650982}
   itemCountText: {fileID: 23538315}
-  inventoryManager: {fileID: 2023521102}
 --- !u!114 &105190831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1112,6 +1189,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 105190828}
   m_CullTransparentMesh: 1
+--- !u!114 &105190833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 105190828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca8b485478bd4e42abb1a38f92aaf34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  iconDisplay: {fileID: 0}
+  button: {fileID: 0}
+  text: {fileID: 0}
+  currentItem: {fileID: 0}
 --- !u!1 &126948080
 GameObject:
   m_ObjectHideFlags: 0
@@ -1124,6 +1217,7 @@ GameObject:
   - component: {fileID: 126948084}
   - component: {fileID: 126948083}
   - component: {fileID: 126948082}
+  - component: {fileID: 126948085}
   m_Layer: 5
   m_Name: InventorySlot (21)
   m_TagString: Untagged
@@ -1167,7 +1261,6 @@ MonoBehaviour:
   item: {fileID: 0}
   icon: {fileID: 956361520}
   itemCountText: {fileID: 1899542326}
-  inventoryManager: {fileID: 2023521102}
 --- !u!114 &126948083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1206,6 +1299,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 126948080}
   m_CullTransparentMesh: 1
+--- !u!114 &126948085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 126948080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca8b485478bd4e42abb1a38f92aaf34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  iconDisplay: {fileID: 0}
+  button: {fileID: 0}
+  text: {fileID: 0}
+  currentItem: {fileID: 0}
 --- !u!1 &132904185
 GameObject:
   m_ObjectHideFlags: 0
@@ -70531,6 +70640,7 @@ GameObject:
   - component: {fileID: 194522022}
   - component: {fileID: 194522021}
   - component: {fileID: 194522020}
+  - component: {fileID: 194522023}
   m_Layer: 5
   m_Name: InventorySlot (19)
   m_TagString: Untagged
@@ -70574,7 +70684,6 @@ MonoBehaviour:
   item: {fileID: 0}
   icon: {fileID: 1285350994}
   itemCountText: {fileID: 320009967}
-  inventoryManager: {fileID: 2023521102}
 --- !u!114 &194522021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70613,6 +70722,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 194522018}
   m_CullTransparentMesh: 1
+--- !u!114 &194522023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194522018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca8b485478bd4e42abb1a38f92aaf34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  iconDisplay: {fileID: 0}
+  button: {fileID: 0}
+  text: {fileID: 0}
+  currentItem: {fileID: 0}
 --- !u!1 &198704097
 GameObject:
   m_ObjectHideFlags: 0
@@ -70700,6 +70825,7 @@ GameObject:
   - component: {fileID: 207908701}
   - component: {fileID: 207908700}
   - component: {fileID: 207908699}
+  - component: {fileID: 207908702}
   m_Layer: 5
   m_Name: InventorySlot (28)
   m_TagString: Untagged
@@ -70743,7 +70869,6 @@ MonoBehaviour:
   item: {fileID: 0}
   icon: {fileID: 1905689241}
   itemCountText: {fileID: 1900304853}
-  inventoryManager: {fileID: 2023521102}
 --- !u!114 &207908700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70782,6 +70907,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 207908697}
   m_CullTransparentMesh: 1
+--- !u!114 &207908702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207908697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca8b485478bd4e42abb1a38f92aaf34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  iconDisplay: {fileID: 0}
+  button: {fileID: 0}
+  text: {fileID: 0}
+  currentItem: {fileID: 0}
 --- !u!1 &215364845
 GameObject:
   m_ObjectHideFlags: 0
@@ -70794,6 +70935,7 @@ GameObject:
   - component: {fileID: 215364849}
   - component: {fileID: 215364848}
   - component: {fileID: 215364847}
+  - component: {fileID: 215364850}
   m_Layer: 5
   m_Name: InventorySlot (8)
   m_TagString: Untagged
@@ -70837,7 +70979,6 @@ MonoBehaviour:
   item: {fileID: 0}
   icon: {fileID: 1593669818}
   itemCountText: {fileID: 1727411599}
-  inventoryManager: {fileID: 2023521102}
 --- !u!114 &215364848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70876,6 +71017,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 215364845}
   m_CullTransparentMesh: 1
+--- !u!114 &215364850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215364845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca8b485478bd4e42abb1a38f92aaf34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  iconDisplay: {fileID: 0}
+  button: {fileID: 0}
+  text: {fileID: 0}
+  currentItem: {fileID: 0}
 --- !u!1 &222473784
 GameObject:
   m_ObjectHideFlags: 0
@@ -70888,7 +71045,6 @@ GameObject:
   - component: {fileID: 222473786}
   - component: {fileID: 222473789}
   - component: {fileID: 222473788}
-  - component: {fileID: 222473790}
   m_Layer: 0
   m_Name: Npc
   m_TagString: Untagged
@@ -71019,33 +71175,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.45
---- !u!50 &222473790
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 222473784}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
 --- !u!1 &235342369
 GameObject:
   m_ObjectHideFlags: 0
@@ -71058,6 +71187,7 @@ GameObject:
   - component: {fileID: 235342373}
   - component: {fileID: 235342372}
   - component: {fileID: 235342371}
+  - component: {fileID: 235342374}
   m_Layer: 5
   m_Name: InventorySlot (27)
   m_TagString: Untagged
@@ -71101,7 +71231,6 @@ MonoBehaviour:
   item: {fileID: 11400000, guid: 5b929512255d4ca4e981d63ff09e2100, type: 2}
   icon: {fileID: 1262529510}
   itemCountText: {fileID: 412742631}
-  inventoryManager: {fileID: 2023521102}
 --- !u!114 &235342372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71140,6 +71269,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 235342369}
   m_CullTransparentMesh: 1
+--- !u!114 &235342374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235342369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca8b485478bd4e42abb1a38f92aaf34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  iconDisplay: {fileID: 0}
+  button: {fileID: 0}
+  text: {fileID: 0}
+  currentItem: {fileID: 0}
 --- !u!1 &248951441
 GameObject:
   m_ObjectHideFlags: 0
@@ -71505,7 +71650,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 4
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -71775,6 +71920,7 @@ GameObject:
   - component: {fileID: 318810817}
   - component: {fileID: 318810816}
   - component: {fileID: 318810815}
+  - component: {fileID: 318810818}
   m_Layer: 5
   m_Name: InventorySlot (34)
   m_TagString: Untagged
@@ -71818,7 +71964,6 @@ MonoBehaviour:
   item: {fileID: 0}
   icon: {fileID: 2129247534}
   itemCountText: {fileID: 444377508}
-  inventoryManager: {fileID: 2023521102}
 --- !u!114 &318810816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71857,6 +72002,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 318810813}
   m_CullTransparentMesh: 1
+--- !u!114 &318810818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 318810813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca8b485478bd4e42abb1a38f92aaf34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  iconDisplay: {fileID: 0}
+  button: {fileID: 0}
+  text: {fileID: 0}
+  currentItem: {fileID: 0}
 --- !u!1 &320009965
 GameObject:
   m_ObjectHideFlags: 0
@@ -72143,6 +72304,7 @@ GameObject:
   - component: {fileID: 355369109}
   - component: {fileID: 355369108}
   - component: {fileID: 355369107}
+  - component: {fileID: 355369110}
   m_Layer: 5
   m_Name: InventorySlot (36)
   m_TagString: Untagged
@@ -72186,7 +72348,6 @@ MonoBehaviour:
   item: {fileID: 0}
   icon: {fileID: 1067235}
   itemCountText: {fileID: 400626582}
-  inventoryManager: {fileID: 2023521102}
 --- !u!114 &355369108
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72225,6 +72386,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 355369105}
   m_CullTransparentMesh: 1
+--- !u!114 &355369110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 355369105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca8b485478bd4e42abb1a38f92aaf34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  iconDisplay: {fileID: 0}
+  button: {fileID: 0}
+  text: {fileID: 0}
+  currentItem: {fileID: 0}
 --- !u!1 &355845613
 GameObject:
   m_ObjectHideFlags: 0
@@ -72236,6 +72413,7 @@ GameObject:
   - component: {fileID: 355845614}
   - component: {fileID: 355845616}
   - component: {fileID: 355845615}
+  - component: {fileID: 355845617}
   m_Layer: 5
   m_Name: Icon
   m_TagString: Untagged
@@ -72300,6 +72478,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 355845613}
   m_CullTransparentMesh: 1
+--- !u!114 &355845617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 355845613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 355845615}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &357360975
 GameObject:
   m_ObjectHideFlags: 0
@@ -72387,6 +72609,7 @@ GameObject:
   - component: {fileID: 381744348}
   - component: {fileID: 381744347}
   - component: {fileID: 381744346}
+  - component: {fileID: 381744349}
   m_Layer: 5
   m_Name: InventorySlot (16)
   m_TagString: Untagged
@@ -72430,7 +72653,6 @@ MonoBehaviour:
   item: {fileID: 11400000, guid: b0f5cf3633d3d6d4481256adf66cde65, type: 2}
   icon: {fileID: 292660819}
   itemCountText: {fileID: 29982706}
-  inventoryManager: {fileID: 2023521102}
 --- !u!114 &381744347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72469,6 +72691,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 381744344}
   m_CullTransparentMesh: 1
+--- !u!114 &381744349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381744344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca8b485478bd4e42abb1a38f92aaf34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  iconDisplay: {fileID: 0}
+  button: {fileID: 0}
+  text: {fileID: 0}
+  currentItem: {fileID: 0}
 --- !u!1 &382280476
 GameObject:
   m_ObjectHideFlags: 0
@@ -72830,6 +73068,7 @@ GameObject:
   - component: {fileID: 405736451}
   - component: {fileID: 405736450}
   - component: {fileID: 405736449}
+  - component: {fileID: 405736452}
   m_Layer: 5
   m_Name: InventorySlot (33)
   m_TagString: Untagged
@@ -72873,7 +73112,6 @@ MonoBehaviour:
   item: {fileID: 11400000, guid: 31e71be8a3d0a354f86624dbe70c501b, type: 2}
   icon: {fileID: 731693951}
   itemCountText: {fileID: 1423069694}
-  inventoryManager: {fileID: 2023521102}
 --- !u!114 &405736450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72912,6 +73150,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 405736447}
   m_CullTransparentMesh: 1
+--- !u!114 &405736452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 405736447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca8b485478bd4e42abb1a38f92aaf34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  iconDisplay: {fileID: 0}
+  button: {fileID: 0}
+  text: {fileID: 0}
+  currentItem: {fileID: 0}
 --- !u!1 &408003532
 GameObject:
   m_ObjectHideFlags: 0
@@ -72923,6 +73177,7 @@ GameObject:
   - component: {fileID: 408003533}
   - component: {fileID: 408003535}
   - component: {fileID: 408003534}
+  - component: {fileID: 408003537}
   m_Layer: 5
   m_Name: InventorySlot
   m_TagString: Untagged
@@ -72942,8 +73197,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2091062366}
   - {fileID: 468572941}
+  - {fileID: 2091062366}
   m_Father: {fileID: 692195608}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -72989,6 +73244,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 408003532}
   m_CullTransparentMesh: 1
+--- !u!114 &408003537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 408003532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca8b485478bd4e42abb1a38f92aaf34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  iconDisplay: {fileID: 2091062367}
+  button: {fileID: 2091062369}
+  text: {fileID: 468572942}
+  currentItem: {fileID: 0}
 --- !u!1 &411712548
 GameObject:
   m_ObjectHideFlags: 0
@@ -73413,6 +73684,7 @@ GameObject:
   - component: {fileID: 415272600}
   - component: {fileID: 415272599}
   - component: {fileID: 415272598}
+  - component: {fileID: 415272601}
   m_Layer: 5
   m_Name: InventorySlot (11)
   m_TagString: Untagged
@@ -73456,7 +73728,6 @@ MonoBehaviour:
   item: {fileID: 0}
   icon: {fileID: 988699328}
   itemCountText: {fileID: 1843062009}
-  inventoryManager: {fileID: 2023521102}
 --- !u!114 &415272599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73495,6 +73766,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 415272596}
   m_CullTransparentMesh: 1
+--- !u!114 &415272601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415272596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca8b485478bd4e42abb1a38f92aaf34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  iconDisplay: {fileID: 0}
+  button: {fileID: 0}
+  text: {fileID: 0}
+  currentItem: {fileID: 0}
 --- !u!1 &418406341
 GameObject:
   m_ObjectHideFlags: 0
@@ -73582,6 +73869,7 @@ GameObject:
   - component: {fileID: 439666889}
   - component: {fileID: 439666891}
   - component: {fileID: 439666890}
+  - component: {fileID: 439666893}
   m_Layer: 5
   m_Name: InventorySlot (6)
   m_TagString: Untagged
@@ -73648,6 +73936,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 439666888}
   m_CullTransparentMesh: 1
+--- !u!114 &439666893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439666888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca8b485478bd4e42abb1a38f92aaf34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  iconDisplay: {fileID: 572997744}
+  button: {fileID: 572997746}
+  text: {fileID: 448850637}
+  currentItem: {fileID: 0}
 --- !u!1 &444377506
 GameObject:
   m_ObjectHideFlags: 0
@@ -74013,7 +74317,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 4
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -74266,7 +74570,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 64
+  m_text: 5
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -74300,7 +74604,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 4
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -74358,6 +74662,7 @@ GameObject:
   - component: {fileID: 471556368}
   - component: {fileID: 471556367}
   - component: {fileID: 471556366}
+  - component: {fileID: 471556369}
   m_Layer: 5
   m_Name: InventorySlot (20)
   m_TagString: Untagged
@@ -74401,7 +74706,6 @@ MonoBehaviour:
   item: {fileID: 0}
   icon: {fileID: 586987496}
   itemCountText: {fileID: 382280478}
-  inventoryManager: {fileID: 2023521102}
 --- !u!114 &471556367
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74440,6 +74744,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 471556364}
   m_CullTransparentMesh: 1
+--- !u!114 &471556369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471556364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca8b485478bd4e42abb1a38f92aaf34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  iconDisplay: {fileID: 0}
+  button: {fileID: 0}
+  text: {fileID: 0}
+  currentItem: {fileID: 0}
 --- !u!1 &491758490
 GameObject:
   m_ObjectHideFlags: 0
@@ -74452,6 +74772,7 @@ GameObject:
   - component: {fileID: 491758494}
   - component: {fileID: 491758493}
   - component: {fileID: 491758492}
+  - component: {fileID: 491758495}
   m_Layer: 5
   m_Name: InventorySlot (10)
   m_TagString: Untagged
@@ -74495,7 +74816,6 @@ MonoBehaviour:
   item: {fileID: 0}
   icon: {fileID: 1430005803}
   itemCountText: {fileID: 1878758527}
-  inventoryManager: {fileID: 2023521102}
 --- !u!114 &491758493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74534,6 +74854,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 491758490}
   m_CullTransparentMesh: 1
+--- !u!114 &491758495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 491758490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca8b485478bd4e42abb1a38f92aaf34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  iconDisplay: {fileID: 0}
+  button: {fileID: 0}
+  text: {fileID: 0}
+  currentItem: {fileID: 0}
 --- !u!1 &503895824
 GameObject:
   m_ObjectHideFlags: 0
@@ -74546,6 +74882,7 @@ GameObject:
   - component: {fileID: 503895828}
   - component: {fileID: 503895827}
   - component: {fileID: 503895826}
+  - component: {fileID: 503895829}
   m_Layer: 5
   m_Name: InventorySlot (3)
   m_TagString: Untagged
@@ -74589,7 +74926,6 @@ MonoBehaviour:
   item: {fileID: 0}
   icon: {fileID: 451665848}
   itemCountText: {fileID: 694614676}
-  inventoryManager: {fileID: 2023521102}
 --- !u!114 &503895827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74628,6 +74964,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 503895824}
   m_CullTransparentMesh: 1
+--- !u!114 &503895829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 503895824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca8b485478bd4e42abb1a38f92aaf34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  iconDisplay: {fileID: 0}
+  button: {fileID: 0}
+  text: {fileID: 0}
+  currentItem: {fileID: 0}
 --- !u!1 &507724935
 GameObject:
   m_ObjectHideFlags: 0
@@ -75426,6 +75778,7 @@ GameObject:
   - component: {fileID: 572997743}
   - component: {fileID: 572997745}
   - component: {fileID: 572997744}
+  - component: {fileID: 572997746}
   m_Layer: 5
   m_Name: Icon
   m_TagString: Untagged
@@ -75490,6 +75843,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 572997742}
   m_CullTransparentMesh: 1
+--- !u!114 &572997746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572997742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 572997744}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &585886864
 GameObject:
   m_ObjectHideFlags: 0
@@ -75652,6 +76049,7 @@ GameObject:
   - component: {fileID: 618457161}
   - component: {fileID: 618457160}
   - component: {fileID: 618457159}
+  - component: {fileID: 618457162}
   m_Layer: 5
   m_Name: InventorySlot (17)
   m_TagString: Untagged
@@ -75695,7 +76093,6 @@ MonoBehaviour:
   item: {fileID: 0}
   icon: {fileID: 71331523}
   itemCountText: {fileID: 694630891}
-  inventoryManager: {fileID: 2023521102}
 --- !u!114 &618457160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75734,6 +76131,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 618457157}
   m_CullTransparentMesh: 1
+--- !u!114 &618457162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 618457157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca8b485478bd4e42abb1a38f92aaf34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  iconDisplay: {fileID: 0}
+  button: {fileID: 0}
+  text: {fileID: 0}
+  currentItem: {fileID: 0}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -75771,7 +76184,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 00000000
+  m_ApplyToSortingLayers: 00000000993c50e6
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -75870,7 +76283,7 @@ MonoBehaviour:
   m_Padding:
     m_Left: 250
     m_Right: 0
-    m_Top: 50
+    m_Top: 100
     m_Bottom: 0
   m_ChildAlignment: 0
   m_Spacing: 25
@@ -77107,6 +77520,7 @@ GameObject:
   - component: {fileID: 678084623}
   - component: {fileID: 678084622}
   - component: {fileID: 678084621}
+  - component: {fileID: 678084624}
   m_Layer: 5
   m_Name: CombatPanel
   m_TagString: Untagged
@@ -77172,6 +77586,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -485.7162}
   m_SizeDelta: {x: 0, y: -971.433}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &678084624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678084620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6a467f28ab3b2b479d908455b4e2d31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CombatPanel
 --- !u!1 &692195607
 GameObject:
   m_ObjectHideFlags: 0
@@ -77781,6 +78207,7 @@ GameObject:
   - component: {fileID: 729725025}
   - component: {fileID: 729725027}
   - component: {fileID: 729725026}
+  - component: {fileID: 729725028}
   m_Layer: 5
   m_Name: Icon
   m_TagString: Untagged
@@ -77845,6 +78272,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 729725024}
   m_CullTransparentMesh: 1
+--- !u!114 &729725028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 729725024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 729725026}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &731693949
 GameObject:
   m_ObjectHideFlags: 0
@@ -77932,6 +78403,7 @@ GameObject:
   - component: {fileID: 748089554}
   - component: {fileID: 748089553}
   - component: {fileID: 748089552}
+  - component: {fileID: 748089555}
   m_Layer: 5
   m_Name: InventorySlot (30)
   m_TagString: Untagged
@@ -77975,7 +78447,6 @@ MonoBehaviour:
   item: {fileID: 0}
   icon: {fileID: 405412059}
   itemCountText: {fileID: 330260656}
-  inventoryManager: {fileID: 2023521102}
 --- !u!114 &748089553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78014,6 +78485,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 748089550}
   m_CullTransparentMesh: 1
+--- !u!114 &748089555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 748089550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca8b485478bd4e42abb1a38f92aaf34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  iconDisplay: {fileID: 0}
+  button: {fileID: 0}
+  text: {fileID: 0}
+  currentItem: {fileID: 0}
 --- !u!1 &759035685
 GameObject:
   m_ObjectHideFlags: 0
@@ -78105,7 +78592,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 4
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -78449,6 +78936,7 @@ GameObject:
   - component: {fileID: 860006738}
   - component: {fileID: 860006740}
   - component: {fileID: 860006739}
+  - component: {fileID: 860006742}
   m_Layer: 5
   m_Name: InventorySlot (5)
   m_TagString: Untagged
@@ -78515,6 +79003,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 860006737}
   m_CullTransparentMesh: 1
+--- !u!114 &860006742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 860006737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca8b485478bd4e42abb1a38f92aaf34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  iconDisplay: {fileID: 729725026}
+  button: {fileID: 729725028}
+  text: {fileID: 922065609}
+  currentItem: {fileID: 0}
 --- !u!1 &877760325
 GameObject:
   m_ObjectHideFlags: 0
@@ -78526,6 +79030,7 @@ GameObject:
   - component: {fileID: 877760326}
   - component: {fileID: 877760328}
   - component: {fileID: 877760327}
+  - component: {fileID: 877760329}
   m_Layer: 5
   m_Name: Icon
   m_TagString: Untagged
@@ -78590,6 +79095,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 877760325}
   m_CullTransparentMesh: 1
+--- !u!114 &877760329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 877760325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 877760327}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &878506688
 GameObject:
   m_ObjectHideFlags: 0
@@ -78602,6 +79151,7 @@ GameObject:
   - component: {fileID: 878506692}
   - component: {fileID: 878506691}
   - component: {fileID: 878506690}
+  - component: {fileID: 878506693}
   m_Layer: 5
   m_Name: InventorySlot (5)
   m_TagString: Untagged
@@ -78645,7 +79195,6 @@ MonoBehaviour:
   item: {fileID: 0}
   icon: {fileID: 508515044}
   itemCountText: {fileID: 51347409}
-  inventoryManager: {fileID: 2023521102}
 --- !u!114 &878506691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78684,6 +79233,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 878506688}
   m_CullTransparentMesh: 1
+--- !u!114 &878506693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878506688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca8b485478bd4e42abb1a38f92aaf34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  iconDisplay: {fileID: 0}
+  button: {fileID: 0}
+  text: {fileID: 0}
+  currentItem: {fileID: 0}
 --- !u!1 &922065607
 GameObject:
   m_ObjectHideFlags: 0
@@ -78775,7 +79340,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 4
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -78912,7 +79477,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 4
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -78969,6 +79534,7 @@ GameObject:
   - component: {fileID: 937565319}
   - component: {fileID: 937565321}
   - component: {fileID: 937565320}
+  - component: {fileID: 937565322}
   m_Layer: 5
   m_Name: Icon
   m_TagString: Untagged
@@ -79033,6 +79599,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 937565318}
   m_CullTransparentMesh: 1
+--- !u!114 &937565322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937565318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 937565320}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &951513508
 GameObject:
   m_ObjectHideFlags: 0
@@ -79045,6 +79655,7 @@ GameObject:
   - component: {fileID: 951513512}
   - component: {fileID: 951513511}
   - component: {fileID: 951513510}
+  - component: {fileID: 951513513}
   m_Layer: 5
   m_Name: InventorySlot (26)
   m_TagString: Untagged
@@ -79088,7 +79699,6 @@ MonoBehaviour:
   item: {fileID: 0}
   icon: {fileID: 1986489097}
   itemCountText: {fileID: 557232673}
-  inventoryManager: {fileID: 2023521102}
 --- !u!114 &951513511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79127,6 +79737,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 951513508}
   m_CullTransparentMesh: 1
+--- !u!114 &951513513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 951513508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca8b485478bd4e42abb1a38f92aaf34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  iconDisplay: {fileID: 0}
+  button: {fileID: 0}
+  text: {fileID: 0}
+  currentItem: {fileID: 0}
 --- !u!1 &956361518
 GameObject:
   m_ObjectHideFlags: 0
@@ -79288,6 +79914,7 @@ GameObject:
   - component: {fileID: 991158933}
   - component: {fileID: 991158935}
   - component: {fileID: 991158934}
+  - component: {fileID: 991158937}
   m_Layer: 5
   m_Name: InventorySlot (3)
   m_TagString: Untagged
@@ -79354,6 +79981,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 991158932}
   m_CullTransparentMesh: 1
+--- !u!114 &991158937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991158932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca8b485478bd4e42abb1a38f92aaf34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  iconDisplay: {fileID: 11687364}
+  button: {fileID: 11687366}
+  text: {fileID: 1836642955}
+  currentItem: {fileID: 0}
 --- !u!1 &1008241307
 GameObject:
   m_ObjectHideFlags: 0
@@ -79365,6 +80008,7 @@ GameObject:
   - component: {fileID: 1008241308}
   - component: {fileID: 1008241310}
   - component: {fileID: 1008241309}
+  - component: {fileID: 1008241312}
   m_Layer: 5
   m_Name: InventorySlot
   m_TagString: Untagged
@@ -79431,6 +80075,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1008241307}
   m_CullTransparentMesh: 1
+--- !u!114 &1008241312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008241307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca8b485478bd4e42abb1a38f92aaf34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  iconDisplay: {fileID: 1268619947}
+  button: {fileID: 1268619946}
+  text: {fileID: 759035687}
+  currentItem: {fileID: 0}
 --- !u!1 &1024430365
 GameObject:
   m_ObjectHideFlags: 0
@@ -79580,6 +80240,7 @@ GameObject:
   - component: {fileID: 1040454182}
   - component: {fileID: 1040454181}
   - component: {fileID: 1040454180}
+  - component: {fileID: 1040454183}
   m_Layer: 5
   m_Name: InventorySlot (14)
   m_TagString: Untagged
@@ -79623,7 +80284,6 @@ MonoBehaviour:
   item: {fileID: 0}
   icon: {fileID: 715660415}
   itemCountText: {fileID: 306792227}
-  inventoryManager: {fileID: 2023521102}
 --- !u!114 &1040454181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79662,6 +80322,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1040454178}
   m_CullTransparentMesh: 1
+--- !u!114 &1040454183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1040454178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca8b485478bd4e42abb1a38f92aaf34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  iconDisplay: {fileID: 0}
+  button: {fileID: 0}
+  text: {fileID: 0}
+  currentItem: {fileID: 0}
 --- !u!1 &1042029175
 GameObject:
   m_ObjectHideFlags: 0
@@ -79811,6 +80487,7 @@ GameObject:
   - component: {fileID: 1074804131}
   - component: {fileID: 1074804130}
   - component: {fileID: 1074804129}
+  - component: {fileID: 1074804132}
   m_Layer: 5
   m_Name: InventorySlot (7)
   m_TagString: Untagged
@@ -79854,7 +80531,6 @@ MonoBehaviour:
   item: {fileID: 11400000, guid: 5b929512255d4ca4e981d63ff09e2100, type: 2}
   icon: {fileID: 1964878654}
   itemCountText: {fileID: 571521200}
-  inventoryManager: {fileID: 2023521102}
 --- !u!114 &1074804130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79893,6 +80569,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1074804127}
   m_CullTransparentMesh: 1
+--- !u!114 &1074804132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1074804127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca8b485478bd4e42abb1a38f92aaf34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  iconDisplay: {fileID: 0}
+  button: {fileID: 0}
+  text: {fileID: 0}
+  currentItem: {fileID: 0}
 --- !u!1 &1080214383
 GameObject:
   m_ObjectHideFlags: 0
@@ -79905,6 +80597,7 @@ GameObject:
   - component: {fileID: 1080214387}
   - component: {fileID: 1080214386}
   - component: {fileID: 1080214385}
+  - component: {fileID: 1080214388}
   m_Layer: 5
   m_Name: InventorySlot (2)
   m_TagString: Untagged
@@ -79948,7 +80641,6 @@ MonoBehaviour:
   item: {fileID: 0}
   icon: {fileID: 78690850}
   itemCountText: {fileID: 446460301}
-  inventoryManager: {fileID: 2023521102}
 --- !u!114 &1080214386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79987,6 +80679,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1080214383}
   m_CullTransparentMesh: 1
+--- !u!114 &1080214388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1080214383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca8b485478bd4e42abb1a38f92aaf34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  iconDisplay: {fileID: 0}
+  button: {fileID: 0}
+  text: {fileID: 0}
+  currentItem: {fileID: 0}
 --- !u!1 &1088199426
 GameObject:
   m_ObjectHideFlags: 0
@@ -80177,6 +80885,7 @@ GameObject:
   - component: {fileID: 1122957054}
   - component: {fileID: 1122957056}
   - component: {fileID: 1122957055}
+  - component: {fileID: 1122957058}
   m_Layer: 5
   m_Name: InventorySlot (1)
   m_TagString: Untagged
@@ -80243,6 +80952,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1122957053}
   m_CullTransparentMesh: 1
+--- !u!114 &1122957058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122957053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca8b485478bd4e42abb1a38f92aaf34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  iconDisplay: {fileID: 2074343085}
+  button: {fileID: 2074343087}
+  text: {fileID: 1514646987}
+  currentItem: {fileID: 0}
 --- !u!1 &1123161795
 GameObject:
   m_ObjectHideFlags: 0
@@ -80255,6 +80980,7 @@ GameObject:
   - component: {fileID: 1123161799}
   - component: {fileID: 1123161798}
   - component: {fileID: 1123161797}
+  - component: {fileID: 1123161800}
   m_Layer: 5
   m_Name: InventorySlot (6)
   m_TagString: Untagged
@@ -80298,7 +81024,6 @@ MonoBehaviour:
   item: {fileID: 0}
   icon: {fileID: 1521353443}
   itemCountText: {fileID: 2103181358}
-  inventoryManager: {fileID: 2023521102}
 --- !u!114 &1123161798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80337,6 +81062,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1123161795}
   m_CullTransparentMesh: 1
+--- !u!114 &1123161800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1123161795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca8b485478bd4e42abb1a38f92aaf34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  iconDisplay: {fileID: 0}
+  button: {fileID: 0}
+  text: {fileID: 0}
+  currentItem: {fileID: 0}
 --- !u!1 &1167998395
 GameObject:
   m_ObjectHideFlags: 0
@@ -80527,7 +81268,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -80643,7 +81384,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 4
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -80929,6 +81670,7 @@ GameObject:
   - component: {fileID: 1231587833}
   - component: {fileID: 1231587835}
   - component: {fileID: 1231587834}
+  - component: {fileID: 1231587837}
   m_Layer: 5
   m_Name: InventorySlot (9)
   m_TagString: Untagged
@@ -80995,6 +81737,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1231587832}
   m_CullTransparentMesh: 1
+--- !u!114 &1231587837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1231587832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca8b485478bd4e42abb1a38f92aaf34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  iconDisplay: {fileID: 937565320}
+  button: {fileID: 937565322}
+  text: {fileID: 1613992546}
+  currentItem: {fileID: 0}
 --- !u!1 &1244225387
 GameObject:
   m_ObjectHideFlags: 0
@@ -81143,6 +81901,7 @@ GameObject:
   - component: {fileID: 1260420709}
   - component: {fileID: 1260420711}
   - component: {fileID: 1260420710}
+  - component: {fileID: 1260420712}
   m_Layer: 5
   m_Name: Icon
   m_TagString: Untagged
@@ -81207,6 +81966,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1260420708}
   m_CullTransparentMesh: 1
+--- !u!114 &1260420712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1260420708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1260420710}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1262529508
 GameObject:
   m_ObjectHideFlags: 0
@@ -81293,6 +82096,7 @@ GameObject:
   - component: {fileID: 1263977108}
   - component: {fileID: 1263977110}
   - component: {fileID: 1263977109}
+  - component: {fileID: 1263977112}
   m_Layer: 5
   m_Name: InventorySlot (4)
   m_TagString: Untagged
@@ -81359,6 +82163,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1263977107}
   m_CullTransparentMesh: 1
+--- !u!114 &1263977112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263977107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca8b485478bd4e42abb1a38f92aaf34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  iconDisplay: {fileID: 355845615}
+  button: {fileID: 355845617}
+  text: {fileID: 260855163}
+  currentItem: {fileID: 0}
 --- !u!1 &1268619944
 GameObject:
   m_ObjectHideFlags: 0
@@ -81473,7 +82293,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1126344992095758660, guid: 082a387b62cca6b4cbf7276d895067a3, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -81715,6 +82535,7 @@ GameObject:
   - component: {fileID: 1293678584}
   - component: {fileID: 1293678583}
   - component: {fileID: 1293678582}
+  - component: {fileID: 1293678585}
   m_Layer: 5
   m_Name: InventorySlot (23)
   m_TagString: Untagged
@@ -81758,7 +82579,6 @@ MonoBehaviour:
   item: {fileID: 0}
   icon: {fileID: 1944545383}
   itemCountText: {fileID: 1024430367}
-  inventoryManager: {fileID: 2023521102}
 --- !u!114 &1293678583
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81797,6 +82617,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1293678580}
   m_CullTransparentMesh: 1
+--- !u!114 &1293678585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1293678580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca8b485478bd4e42abb1a38f92aaf34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  iconDisplay: {fileID: 0}
+  button: {fileID: 0}
+  text: {fileID: 0}
+  currentItem: {fileID: 0}
 --- !u!1 &1306837917
 GameObject:
   m_ObjectHideFlags: 0
@@ -82295,6 +83131,7 @@ GameObject:
   - component: {fileID: 1469456410}
   - component: {fileID: 1469456409}
   - component: {fileID: 1469456408}
+  - component: {fileID: 1469456411}
   m_Layer: 5
   m_Name: InventorySlot (25)
   m_TagString: Untagged
@@ -82338,7 +83175,6 @@ MonoBehaviour:
   item: {fileID: 0}
   icon: {fileID: 451170080}
   itemCountText: {fileID: 248951443}
-  inventoryManager: {fileID: 2023521102}
 --- !u!114 &1469456409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82377,6 +83213,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1469456406}
   m_CullTransparentMesh: 1
+--- !u!114 &1469456411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1469456406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca8b485478bd4e42abb1a38f92aaf34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  iconDisplay: {fileID: 0}
+  button: {fileID: 0}
+  text: {fileID: 0}
+  currentItem: {fileID: 0}
 --- !u!1 &1481754115
 GameObject:
   m_ObjectHideFlags: 0
@@ -82705,7 +83557,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 4
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -82838,6 +83690,7 @@ GameObject:
   - component: {fileID: 1535089912}
   - component: {fileID: 1535089911}
   - component: {fileID: 1535089910}
+  - component: {fileID: 1535089913}
   m_Layer: 5
   m_Name: InventorySlot (24)
   m_TagString: Untagged
@@ -82881,7 +83734,6 @@ MonoBehaviour:
   item: {fileID: 0}
   icon: {fileID: 1675342640}
   itemCountText: {fileID: 1487061139}
-  inventoryManager: {fileID: 2023521102}
 --- !u!114 &1535089911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82920,6 +83772,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1535089908}
   m_CullTransparentMesh: 1
+--- !u!114 &1535089913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535089908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca8b485478bd4e42abb1a38f92aaf34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  iconDisplay: {fileID: 0}
+  button: {fileID: 0}
+  text: {fileID: 0}
+  currentItem: {fileID: 0}
 --- !u!1 &1593669816
 GameObject:
   m_ObjectHideFlags: 0
@@ -83007,6 +83875,7 @@ GameObject:
   - component: {fileID: 1607827734}
   - component: {fileID: 1607827733}
   - component: {fileID: 1607827732}
+  - component: {fileID: 1607827735}
   m_Layer: 5
   m_Name: InventorySlot (37)
   m_TagString: Untagged
@@ -83050,7 +83919,6 @@ MonoBehaviour:
   item: {fileID: 0}
   icon: {fileID: 779578259}
   itemCountText: {fileID: 1872695096}
-  inventoryManager: {fileID: 2023521102}
 --- !u!114 &1607827733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83089,6 +83957,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1607827730}
   m_CullTransparentMesh: 1
+--- !u!114 &1607827735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1607827730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca8b485478bd4e42abb1a38f92aaf34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  iconDisplay: {fileID: 0}
+  button: {fileID: 0}
+  text: {fileID: 0}
+  currentItem: {fileID: 0}
 --- !u!1 &1610862897
 GameObject:
   m_ObjectHideFlags: 0
@@ -83101,6 +83985,7 @@ GameObject:
   - component: {fileID: 1610862901}
   - component: {fileID: 1610862900}
   - component: {fileID: 1610862899}
+  - component: {fileID: 1610862902}
   m_Layer: 5
   m_Name: InventorySlot (1)
   m_TagString: Untagged
@@ -83144,7 +84029,6 @@ MonoBehaviour:
   item: {fileID: 11400000, guid: c13c09218235c2842a61cda2a80dae73, type: 2}
   icon: {fileID: 1642272409}
   itemCountText: {fileID: 411712550}
-  inventoryManager: {fileID: 2023521102}
 --- !u!114 &1610862900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83183,6 +84067,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1610862897}
   m_CullTransparentMesh: 1
+--- !u!114 &1610862902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610862897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca8b485478bd4e42abb1a38f92aaf34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  iconDisplay: {fileID: 0}
+  button: {fileID: 0}
+  text: {fileID: 0}
+  currentItem: {fileID: 0}
 --- !u!1 &1613992544
 GameObject:
   m_ObjectHideFlags: 0
@@ -83274,7 +84174,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 4
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -83548,7 +84448,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 4
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -83681,6 +84581,7 @@ GameObject:
   - component: {fileID: 1661884666}
   - component: {fileID: 1661884665}
   - component: {fileID: 1661884664}
+  - component: {fileID: 1661884667}
   m_Layer: 5
   m_Name: InventorySlot (22)
   m_TagString: Untagged
@@ -83724,7 +84625,6 @@ MonoBehaviour:
   item: {fileID: 0}
   icon: {fileID: 727890369}
   itemCountText: {fileID: 1780767393}
-  inventoryManager: {fileID: 2023521102}
 --- !u!114 &1661884665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83763,6 +84663,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1661884662}
   m_CullTransparentMesh: 1
+--- !u!114 &1661884667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1661884662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca8b485478bd4e42abb1a38f92aaf34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  iconDisplay: {fileID: 0}
+  button: {fileID: 0}
+  text: {fileID: 0}
+  currentItem: {fileID: 0}
 --- !u!1 &1667816221
 GameObject:
   m_ObjectHideFlags: 0
@@ -83775,6 +84691,7 @@ GameObject:
   - component: {fileID: 1667816225}
   - component: {fileID: 1667816224}
   - component: {fileID: 1667816223}
+  - component: {fileID: 1667816226}
   m_Layer: 5
   m_Name: InventorySlot (18)
   m_TagString: Untagged
@@ -83818,7 +84735,6 @@ MonoBehaviour:
   item: {fileID: 0}
   icon: {fileID: 1215109672}
   itemCountText: {fileID: 1280063710}
-  inventoryManager: {fileID: 2023521102}
 --- !u!114 &1667816224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83857,6 +84773,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1667816221}
   m_CullTransparentMesh: 1
+--- !u!114 &1667816226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1667816221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca8b485478bd4e42abb1a38f92aaf34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  iconDisplay: {fileID: 0}
+  button: {fileID: 0}
+  text: {fileID: 0}
+  currentItem: {fileID: 0}
 --- !u!1 &1675342638
 GameObject:
   m_ObjectHideFlags: 0
@@ -84019,6 +84951,7 @@ GameObject:
   - component: {fileID: 1683769907}
   - component: {fileID: 1683769906}
   - component: {fileID: 1683769905}
+  - component: {fileID: 1683769908}
   m_Layer: 5
   m_Name: InventorySlot (39)
   m_TagString: Untagged
@@ -84062,7 +84995,6 @@ MonoBehaviour:
   item: {fileID: 0}
   icon: {fileID: 1907169806}
   itemCountText: {fileID: 2081702644}
-  inventoryManager: {fileID: 2023521102}
 --- !u!114 &1683769906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -84101,6 +85033,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1683769903}
   m_CullTransparentMesh: 1
+--- !u!114 &1683769908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683769903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca8b485478bd4e42abb1a38f92aaf34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  iconDisplay: {fileID: 0}
+  button: {fileID: 0}
+  text: {fileID: 0}
+  currentItem: {fileID: 0}
 --- !u!1 &1686853042
 GameObject:
   m_ObjectHideFlags: 0
@@ -84238,7 +85186,6 @@ MonoBehaviour:
   maxMoveDistance: 0
   moveSpeed: 3
   attacks: []
-  inventoryManager: {fileID: 2023521102}
   attackedThisTurn: 0
 --- !u!114 &1686853048
 MonoBehaviour:
@@ -84991,6 +85938,7 @@ GameObject:
   - component: {fileID: 1755778079}
   - component: {fileID: 1755778078}
   - component: {fileID: 1755778077}
+  - component: {fileID: 1755778080}
   m_Layer: 5
   m_Name: InventorySlot
   m_TagString: Untagged
@@ -85034,7 +85982,6 @@ MonoBehaviour:
   item: {fileID: 0}
   icon: {fileID: 644215178}
   itemCountText: {fileID: 540810161}
-  inventoryManager: {fileID: 2023521102}
 --- !u!114 &1755778078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85073,6 +86020,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1755778075}
   m_CullTransparentMesh: 1
+--- !u!114 &1755778080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1755778075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca8b485478bd4e42abb1a38f92aaf34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  iconDisplay: {fileID: 0}
+  button: {fileID: 0}
+  text: {fileID: 0}
+  currentItem: {fileID: 0}
 --- !u!1 &1757488172
 GameObject:
   m_ObjectHideFlags: 0
@@ -85188,6 +86151,7 @@ GameObject:
   - component: {fileID: 1762934029}
   - component: {fileID: 1762934028}
   - component: {fileID: 1762934027}
+  - component: {fileID: 1762934030}
   m_Layer: 5
   m_Name: InventorySlot (38)
   m_TagString: Untagged
@@ -85231,7 +86195,6 @@ MonoBehaviour:
   item: {fileID: 0}
   icon: {fileID: 1894786147}
   itemCountText: {fileID: 774762630}
-  inventoryManager: {fileID: 2023521102}
 --- !u!114 &1762934028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85270,6 +86233,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1762934025}
   m_CullTransparentMesh: 1
+--- !u!114 &1762934030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762934025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca8b485478bd4e42abb1a38f92aaf34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  iconDisplay: {fileID: 0}
+  button: {fileID: 0}
+  text: {fileID: 0}
+  currentItem: {fileID: 0}
 --- !u!1 &1780767391
 GameObject:
   m_ObjectHideFlags: 0
@@ -85419,6 +86398,7 @@ GameObject:
   - component: {fileID: 1792005320}
   - component: {fileID: 1792005319}
   - component: {fileID: 1792005318}
+  - component: {fileID: 1792005321}
   m_Layer: 5
   m_Name: InventorySlot (29)
   m_TagString: Untagged
@@ -85462,7 +86442,6 @@ MonoBehaviour:
   item: {fileID: 0}
   icon: {fileID: 585886866}
   itemCountText: {fileID: 1244225389}
-  inventoryManager: {fileID: 2023521102}
 --- !u!114 &1792005319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85501,6 +86480,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1792005316}
   m_CullTransparentMesh: 1
+--- !u!114 &1792005321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792005316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca8b485478bd4e42abb1a38f92aaf34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  iconDisplay: {fileID: 0}
+  button: {fileID: 0}
+  text: {fileID: 0}
+  currentItem: {fileID: 0}
 --- !u!1 &1815737696
 GameObject:
   m_ObjectHideFlags: 0
@@ -85650,6 +86645,7 @@ GameObject:
   - component: {fileID: 1820413355}
   - component: {fileID: 1820413357}
   - component: {fileID: 1820413356}
+  - component: {fileID: 1820413359}
   m_Layer: 5
   m_Name: InventorySlot (8)
   m_TagString: Untagged
@@ -85716,6 +86712,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1820413354}
   m_CullTransparentMesh: 1
+--- !u!114 &1820413359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1820413354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca8b485478bd4e42abb1a38f92aaf34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  iconDisplay: {fileID: 1260420710}
+  button: {fileID: 1260420712}
+  text: {fileID: 930892411}
+  currentItem: {fileID: 0}
 --- !u!1 &1827316681
 GameObject:
   m_ObjectHideFlags: 0
@@ -85727,6 +86739,7 @@ GameObject:
   - component: {fileID: 1827316682}
   - component: {fileID: 1827316684}
   - component: {fileID: 1827316683}
+  - component: {fileID: 1827316685}
   m_Layer: 5
   m_Name: Icon
   m_TagString: Untagged
@@ -85791,6 +86804,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1827316681}
   m_CullTransparentMesh: 1
+--- !u!114 &1827316685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1827316681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1827316683}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1836642953
 GameObject:
   m_ObjectHideFlags: 0
@@ -85882,7 +86939,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 4
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -87075,6 +88132,7 @@ GameObject:
   - component: {fileID: 2019681720}
   - component: {fileID: 2019681719}
   - component: {fileID: 2019681718}
+  - component: {fileID: 2019681721}
   m_Layer: 5
   m_Name: InventorySlot (12)
   m_TagString: Untagged
@@ -87118,7 +88176,6 @@ MonoBehaviour:
   item: {fileID: 0}
   icon: {fileID: 175447850}
   itemCountText: {fileID: 1634128052}
-  inventoryManager: {fileID: 2023521102}
 --- !u!114 &2019681719
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87157,6 +88214,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2019681716}
   m_CullTransparentMesh: 1
+--- !u!114 &2019681721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2019681716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca8b485478bd4e42abb1a38f92aaf34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  iconDisplay: {fileID: 0}
+  button: {fileID: 0}
+  text: {fileID: 0}
+  currentItem: {fileID: 0}
 --- !u!1 &2023521101
 GameObject:
   m_ObjectHideFlags: 0
@@ -87191,8 +88264,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35a2b7d9e0965024eac469ff6f6e0042, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InventoryManager
-  isInventoryOpen: 0
   inventoryPanel: {fileID: 418406341}
+  isInventoryOpen: 0
 --- !u!114 &2023521103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87369,6 +88442,7 @@ GameObject:
   - component: {fileID: 2055196147}
   - component: {fileID: 2055196146}
   - component: {fileID: 2055196145}
+  - component: {fileID: 2055196148}
   m_Layer: 5
   m_Name: InventorySlot (4)
   m_TagString: Untagged
@@ -87412,7 +88486,6 @@ MonoBehaviour:
   item: {fileID: 0}
   icon: {fileID: 507724937}
   itemCountText: {fileID: 1716174472}
-  inventoryManager: {fileID: 2023521102}
 --- !u!114 &2055196146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87451,6 +88524,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2055196143}
   m_CullTransparentMesh: 1
+--- !u!114 &2055196148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055196143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca8b485478bd4e42abb1a38f92aaf34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  iconDisplay: {fileID: 0}
+  button: {fileID: 0}
+  text: {fileID: 0}
+  currentItem: {fileID: 0}
 --- !u!1 &2063777391
 GameObject:
   m_ObjectHideFlags: 0
@@ -87601,6 +88690,7 @@ GameObject:
   - component: {fileID: 2067240033}
   - component: {fileID: 2067240032}
   - component: {fileID: 2067240031}
+  - component: {fileID: 2067240034}
   m_Layer: 5
   m_Name: InventorySlot (35)
   m_TagString: Untagged
@@ -87644,7 +88734,6 @@ MonoBehaviour:
   item: {fileID: 0}
   icon: {fileID: 2044890306}
   itemCountText: {fileID: 1719684665}
-  inventoryManager: {fileID: 2023521102}
 --- !u!114 &2067240032
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87683,6 +88772,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2067240029}
   m_CullTransparentMesh: 1
+--- !u!114 &2067240034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2067240029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca8b485478bd4e42abb1a38f92aaf34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  iconDisplay: {fileID: 0}
+  button: {fileID: 0}
+  text: {fileID: 0}
+  currentItem: {fileID: 0}
 --- !u!1 &2074343083
 GameObject:
   m_ObjectHideFlags: 0
@@ -87964,6 +89069,7 @@ GameObject:
   - component: {fileID: 2084787016}
   - component: {fileID: 2084787015}
   - component: {fileID: 2084787014}
+  - component: {fileID: 2084787017}
   m_Layer: 5
   m_Name: InventorySlot (31)
   m_TagString: Untagged
@@ -88007,7 +89113,6 @@ MonoBehaviour:
   item: {fileID: 0}
   icon: {fileID: 198704099}
   itemCountText: {fileID: 1697498232}
-  inventoryManager: {fileID: 2023521102}
 --- !u!114 &2084787015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88046,6 +89151,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2084787012}
   m_CullTransparentMesh: 1
+--- !u!114 &2084787017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2084787012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca8b485478bd4e42abb1a38f92aaf34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  iconDisplay: {fileID: 0}
+  button: {fileID: 0}
+  text: {fileID: 0}
+  currentItem: {fileID: 0}
 --- !u!1 &2085229813
 GameObject:
   m_ObjectHideFlags: 0
@@ -88057,6 +89178,7 @@ GameObject:
   - component: {fileID: 2085229814}
   - component: {fileID: 2085229816}
   - component: {fileID: 2085229815}
+  - component: {fileID: 2085229818}
   m_Layer: 5
   m_Name: InventorySlot (7)
   m_TagString: Untagged
@@ -88123,6 +89245,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2085229813}
   m_CullTransparentMesh: 1
+--- !u!114 &2085229818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2085229813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca8b485478bd4e42abb1a38f92aaf34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  iconDisplay: {fileID: 877760327}
+  button: {fileID: 877760329}
+  text: {fileID: 1638608525}
+  currentItem: {fileID: 0}
 --- !u!1 &2091062365
 GameObject:
   m_ObjectHideFlags: 0
@@ -88149,7 +89287,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2091062365}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -88158,7 +89296,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.07098389, y: -0.01231}
+  m_AnchoredPosition: {x: 0.07098389, y: -0.012310028}
   m_SizeDelta: {x: 91.328, y: 91.434}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2091062367
@@ -88181,7 +89319,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2959826883323455076, guid: 082a387b62cca6b4cbf7276d895067a3, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -88403,6 +89541,7 @@ GameObject:
   - component: {fileID: 2120542164}
   - component: {fileID: 2120542166}
   - component: {fileID: 2120542165}
+  - component: {fileID: 2120542168}
   m_Layer: 5
   m_Name: InventorySlot (2)
   m_TagString: Untagged
@@ -88422,8 +89561,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1827316682}
   - {fileID: 1177349440}
+  - {fileID: 1827316682}
   m_Father: {fileID: 692195608}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -88469,6 +89608,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2120542163}
   m_CullTransparentMesh: 1
+--- !u!114 &2120542168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120542163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca8b485478bd4e42abb1a38f92aaf34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  iconDisplay: {fileID: 1827316683}
+  button: {fileID: 1827316685}
+  text: {fileID: 1177349441}
+  currentItem: {fileID: 0}
 --- !u!1 &2129247532
 GameObject:
   m_ObjectHideFlags: 0
@@ -88602,6 +89757,7 @@ GameObject:
   - component: {fileID: 2146261107}
   - component: {fileID: 2146261106}
   - component: {fileID: 2146261105}
+  - component: {fileID: 2146261108}
   m_Layer: 5
   m_Name: InventorySlot (13)
   m_TagString: Untagged
@@ -88645,7 +89801,6 @@ MonoBehaviour:
   item: {fileID: 11400000, guid: b70118718bc386347b8cf04d4ae54c1a, type: 2}
   icon: {fileID: 357360977}
   itemCountText: {fileID: 1306837919}
-  inventoryManager: {fileID: 2023521102}
 --- !u!114 &2146261106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88684,6 +89839,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2146261103}
   m_CullTransparentMesh: 1
+--- !u!114 &2146261108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2146261103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca8b485478bd4e42abb1a38f92aaf34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSlot
+  iconDisplay: {fileID: 0}
+  button: {fileID: 0}
+  text: {fileID: 0}
+  currentItem: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

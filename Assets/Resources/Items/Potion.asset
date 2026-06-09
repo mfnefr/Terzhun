@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Potion
   m_EditorClassIdentifier: Assembly-CSharp::Item
   itemName: Potion
-  icon: {fileID: -5280726875750141052, guid: 8fd7df14ff7c527448bac560740331eb, type: 3}
+  icon: {fileID: 2959826883323455076, guid: 082a387b62cca6b4cbf7276d895067a3, type: 3}
   isStackable: 1
+  isUsableInCombat: 1
   itemCount: 5
-  itemID: 2
+  itemID: 4

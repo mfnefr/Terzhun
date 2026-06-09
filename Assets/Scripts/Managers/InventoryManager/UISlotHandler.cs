@@ -8,7 +8,6 @@ public class UISlotHandler : MonoBehaviour, IPointerClickHandler
     public Item item;
     public Image icon;
     public TextMeshProUGUI itemCountText;
-    public InventoryManager inventoryManager;
 
     void IPointerClickHandler.OnPointerClick(PointerEventData eventData)
     {
@@ -36,5 +35,12 @@ public class UISlotHandler : MonoBehaviour, IPointerClickHandler
             icon.gameObject.SetActive(false);
             itemCountText.text = string.Empty;
         }
+    }
+
+    public void ClearSlot()
+    {
+        item = null;
+        icon.sprite = null;
+        itemCountText.text = string.Empty;    
     }
 }

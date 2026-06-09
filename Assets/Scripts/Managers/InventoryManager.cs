@@ -1,13 +1,23 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class InventoryManager : MonoBehaviour
 {
-    public bool isInventoryOpen;
+    public static InventoryManager Instance {get; private set;}
+
+    [Header("UI Links")]
     public GameObject inventoryPanel;
 
-    void Start()
+    private List<UISlotHandler> inventorySlots = new List<UISlotHandler>();    
+    public bool isInventoryOpen;
+
+
+    void Awake()
     {
+        Instance = this;
+
+        inventoryPanel.GetComponentsInChildren(true, inventorySlots);
         inventoryPanel.SetActive(isInventoryOpen);
     }
     
@@ -40,4 +50,10 @@ public class InventoryManager : MonoBehaviour
         currentSlot.itemCountText.text = string.Empty;
         currentSlot.icon.gameObject.SetActive(false);
     }
+
+    public List<UISlotHandler> GetInventoryContents()
+    {
+        return inventorySlots;
+    }
 }
+
