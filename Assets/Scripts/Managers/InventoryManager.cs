@@ -9,7 +9,7 @@ public class InventoryManager : MonoBehaviour
     [Header("UI Links")]
     public GameObject inventoryPanel;
 
-    private List<UISlotHandler> inventorySlots = new List<UISlotHandler>();    
+    private List<UISlotHandler> inventorySlots = new List<UISlotHandler>();
     public bool isInventoryOpen;
 
 

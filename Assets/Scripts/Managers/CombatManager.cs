@@ -24,6 +24,7 @@ public class CombatManager : MonoBehaviour
     public Button attackButton;
     public Button rangedAttackButton;
     public Button potionButton;
+    private List<ItemSlot> cSlots;
 
     [Header("Combatants")]
     public Player player;
@@ -47,6 +48,8 @@ public class CombatManager : MonoBehaviour
         attackButton.interactable = false;
         rangedAttackButton.interactable = false;
         potionButton.interactable = false;
+
+        cSlots = new List<ItemSlot>(combatPanel.GetComponentsInChildren<ItemSlot>());
     }
 
     private void MakeTurnOrder()
@@ -89,7 +92,7 @@ public class CombatManager : MonoBehaviour
     {
         attackButton.interactable = true;
         rangedAttackButton.interactable = true;
-        potionButton.interactable = true;
+        if(cSlots[1].text.text == "0") potionButton.interactable = false; else potionButton.interactable = true;
     }
 
     public void OnAttackButton()
@@ -145,8 +148,15 @@ public class CombatManager : MonoBehaviour
         potionButton.interactable = false;
 
         currentState = CombatState.Busy;
-        
         player.UsePotion();
+
+        foreach(ItemSlot cSlot in cSlots){
+            if (cSlot.currentItem.itemName == "Potion")
+            {
+                cSlot.text.text = (int.Parse(cSlot.text.text) - 1).ToString();
+                break;
+            }
+        }
 
         EndPlayerTurn();
     }

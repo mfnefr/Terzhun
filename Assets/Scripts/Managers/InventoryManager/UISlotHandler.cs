@@ -41,6 +41,6 @@ public class UISlotHandler : MonoBehaviour, IPointerClickHandler
     {
         item = null;
         icon.sprite = null;
-        itemCountText.text = string.Empty;    
+        itemCountText.text = string.Empty;
     }
 }

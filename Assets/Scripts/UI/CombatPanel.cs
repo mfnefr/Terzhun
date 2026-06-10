@@ -11,7 +11,6 @@ public class CombatPanel : MonoBehaviour
     {
         inventorySlots = InventoryManager.Instance.GetInventoryContents();
         GetComponentsInChildren(true, combatSlots);
-        
         LoadCombatSlots();
     }
 
@@ -20,7 +19,6 @@ public class CombatPanel : MonoBehaviour
         if (InventoryManager.Instance != null)
         {
             inventorySlots = InventoryManager.Instance.GetInventoryContents();
-            
             LoadCombatSlots();
         }
     }
@@ -48,7 +46,7 @@ public class CombatPanel : MonoBehaviour
 
         for (int i = 0; i < usableItems.Count; i++)
         {
-            if (i >= combatSlots.Count) break; 
+            if (i >= combatSlots.Count) break;
 
             combatSlots[i].UpdateSlot(usableItems[i].item);
         }
