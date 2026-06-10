@@ -55,5 +55,52 @@ public class InventoryManager : MonoBehaviour
     {
         return inventorySlots;
     }
+
+    public void AddItem(string resourceName)
+    {
+        Item item = Resources.Load<Item>("items/" + resourceName);
+
+        if (item == null)
+        {
+            Debug.LogError($"Předmět s názvem {resourceName} nebyl ve složce Resources/items/ nalezen!");
+            return;
+        }
+
+        Item itemToAdd = item.Clone();
+
+        if (itemToAdd.isStackable)
+        {
+            foreach (UISlotHandler slot in inventorySlots)
+            {
+                if (slot.item != null && slot.item.itemID == itemToAdd.itemID)
+                {
+                    StackInInventory(slot, itemToAdd);
+                    return;
+                }
+            }
+        }
+
+        foreach (UISlotHandler slot in inventorySlots)
+        {
+            if (slot.item == null)
+            {
+                PlaceInInventory(slot, itemToAdd);
+                return;
+            }
+        }
+
+        Debug.LogWarning("Inventář je plný! Předmět se nepodařilo přidat.");
+    }
+
+    public void RemoveItem(string itemName)
+    {
+        foreach (UISlotHandler slot in inventorySlots)
+        {
+            if (slot.item.itemName == itemName)
+            {
+                slot.item = null;
+            }
+        }
+    }
 }
 

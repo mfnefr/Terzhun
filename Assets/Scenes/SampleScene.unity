@@ -70512,7 +70512,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0.1325}
+  m_AnchoredPosition: {x: 0.011002, y: -0.1325}
   m_SizeDelta: {x: 100, y: 24}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &174234310
@@ -71228,7 +71228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 904069f80daec2141af2c47eac6eab7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UISlotHandler
-  item: {fileID: 11400000, guid: 5b929512255d4ca4e981d63ff09e2100, type: 2}
+  item: {fileID: 0}
   icon: {fileID: 1262529510}
   itemCountText: {fileID: 412742631}
 --- !u!114 &235342372
@@ -80528,7 +80528,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 904069f80daec2141af2c47eac6eab7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UISlotHandler
-  item: {fileID: 11400000, guid: 5b929512255d4ca4e981d63ff09e2100, type: 2}
+  item: {fileID: 0}
   icon: {fileID: 1964878654}
   itemCountText: {fileID: 571521200}
 --- !u!114 &1074804130
@@ -80846,6 +80846,7 @@ MonoBehaviour:
   armorClass: 10
   maxMoveDistance: 0
   moveSpeed: 0
+  isMoving: 0
   attacks: []
 --- !u!50 &1088199431
 Rigidbody2D:
@@ -84026,7 +84027,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 904069f80daec2141af2c47eac6eab7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UISlotHandler
-  item: {fileID: 11400000, guid: c13c09218235c2842a61cda2a80dae73, type: 2}
+  item: {fileID: 0}
   icon: {fileID: 1642272409}
   itemCountText: {fileID: 411712550}
 --- !u!114 &1610862900
@@ -85138,7 +85139,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_MaskInteraction: 0
   m_Sprite: {fileID: -8946272391398592804, guid: 136bad6a4716c7345ac848e4fa2241c1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -85186,6 +85187,7 @@ MonoBehaviour:
   armorClass: 15
   maxMoveDistance: 0
   moveSpeed: 3
+  isMoving: 0
   attacks: []
   attackedThisTurn: 0
 --- !u!114 &1686853048
@@ -86096,7 +86098,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.65, y: 5.28}
+  m_AnchoredPosition: {x: 0.06, y: 5.28}
   m_SizeDelta: {x: 100, y: 15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1757488174
@@ -89821,7 +89823,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 904069f80daec2141af2c47eac6eab7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UISlotHandler
-  item: {fileID: 11400000, guid: b70118718bc386347b8cf04d4ae54c1a, type: 2}
+  item: {fileID: 0}
   icon: {fileID: 357360977}
   itemCountText: {fileID: 1306837919}
 --- !u!114 &2146261106

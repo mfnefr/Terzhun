@@ -165,6 +165,7 @@ public class CombatManager : MonoBehaviour
     {
         if(currentEnemy.health <= 0)
         {
+            InventoryManager.Instance.AddItem("Cat");
             currentState = CombatState.Won;
             Destroy(currentEnemy.gameObject);
             ExitCombatMode();

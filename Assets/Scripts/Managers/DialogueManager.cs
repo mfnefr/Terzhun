@@ -1,15 +1,16 @@
-using UnityEngine;
+using System.Collections.Generic;
 using Ink.Runtime;
 using TMPro;
+using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
-using System.Collections.Generic;
 
 public class DialogueManager : MonoBehaviour
 {
     [Header("Object References")]
     public static DialogueManager Instance {get; private set;}
     public Transform player;
+    private NPC currentNPC;
 
     [Header("Dialogue Settings")]
     private Story story;
@@ -80,7 +81,6 @@ public class DialogueManager : MonoBehaviour
 
             Button button = choiceObj.GetComponent<Button>();
             button.onClick.AddListener(() => MakeChoice(choice.index));
-            
         }
     }
 
@@ -91,9 +91,18 @@ public class DialogueManager : MonoBehaviour
         ContinueStory();
     }
 
-    public void EnterDialogueMode(TextAsset inkJson)
+    public void EnterDialogueMode(TextAsset inkJson, NPC npc)
     {
+        this.currentNPC = npc;
         story = new Story(inkJson.text);
+
+        if (!string.IsNullOrEmpty(currentNPC.GetDialogueState()))
+        {
+            story.state.LoadJson(currentNPC.GetDialogueState());
+            story.ChoosePathString("rozcesti");
+        }
+        
+        story.variablesState["haveCat"] = CheckForCatInInventory();
 
         dialogueIsPlaying = true;
         dialoguePanel.SetActive(true);
@@ -103,8 +112,29 @@ public class DialogueManager : MonoBehaviour
 
     public void ExitDialogueMode()
     {
+        if (currentNPC != null && story != null)
+        {
+            string currentState = story.state.ToJson();
+            currentNPC.SetDialogueState(currentState);
+        }
+
         dialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
         dialogueText.text = "";
+    }
+
+    private bool CheckForCatInInventory()
+    {
+        List<UISlotHandler> inventoryContents = InventoryManager.Instance.GetInventoryContents();
+
+        foreach (UISlotHandler cSlot in inventoryContents)
+        {
+            if (cSlot.item != null && cSlot.item.itemName == "Cat")
+            {
+                InventoryManager.Instance.ClearItemSlot(cSlot);
+                return true;
+            }
+        }
+        return false;
     }
 }

@@ -6,7 +6,8 @@ public class NPC : MonoBehaviour
     [SerializeField] private TextAsset textAsset;
     private GameObject visualBox;
     private bool isPlayerInRange = false;
-    
+    private string dialogueState = "";
+
     void Start()
     {
         // načtení ikonky pro dialog
@@ -22,9 +23,12 @@ public class NPC : MonoBehaviour
     {
         if(context.started && isPlayerInRange && !DialogueManager.Instance.dialogueIsPlaying)
         {
-            DialogueManager.Instance.EnterDialogueMode(textAsset);
+            DialogueManager.Instance.EnterDialogueMode(textAsset, this);
         }
     }
+
+    public string GetDialogueState() => dialogueState;
+    public void SetDialogueState(string json) => dialogueState = json;
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
