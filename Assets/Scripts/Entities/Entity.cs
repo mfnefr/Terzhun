@@ -1,7 +1,7 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using System.Collections.Generic;
-using System.Collections;
 
 public class Entity : MonoBehaviour
 {
@@ -21,6 +21,7 @@ public class Entity : MonoBehaviour
     public int armorClass;
     public float maxMoveDistance;
     public float moveSpeed;
+    public bool isMoving;
     public List<Attack> attacks = new List<Attack>();
 
     protected virtual void Start()
@@ -31,6 +32,9 @@ public class Entity : MonoBehaviour
 
     public IEnumerator AttackSequence(Entity target, System.Action onSequenceComplete)
     {
+        Animator anim = GetComponent<Animator>();
+        if (anim) anim.SetBool("isMoving", true);
+
         Vector2 targetPos = (Vector2)target.transform.position + ((rb.position - (Vector2)target.transform.position).normalized * 1.5f);
 
         while (Vector2.Distance(rb.position, targetPos) > 0.5f)
@@ -38,8 +42,10 @@ public class Entity : MonoBehaviour
             Vector2 newPos = Vector2.MoveTowards(rb.position, targetPos, moveSpeed * Time.fixedDeltaTime);
             rb.MovePosition(newPos);
 
-            yield return new WaitForFixedUpdate(); 
+            yield return new WaitForFixedUpdate();
         }
+
+        if(anim) anim.SetBool("isMoving", false);
 
         target.health -= RollDamage();
         target.UpdateHealthBar();

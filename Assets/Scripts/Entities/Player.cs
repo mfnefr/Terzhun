@@ -3,13 +3,17 @@ using UnityEngine.InputSystem;
 
 public class Player : Entity
 {
+    [Header("Animation")]
+    private Animator anim;
     [Header("Player Settings")]
     private Vector3 targetPos;
     public bool attackedThisTurn = false;
-    private bool isMoving = false;
 
     void Start()
     {
+        anim = GetComponent<Animator>();
+
+        isMoving = false;
         maxHealth = 30;
         health = maxHealth;
         armorClass = 15;
@@ -22,9 +26,16 @@ public class Player : Entity
 
     void Update()
     {
-        if(!GameManager.Instance.IsGameActive() || InventoryManager.Instance.isInventoryOpen) return;
+        if (!GameManager.Instance.IsGameActive() || InventoryManager.Instance.isInventoryOpen)
+        {
+            if (isMoving)
+            {
+                isMoving = false;
+                anim.SetBool("isMoving", false);
+            }
+            return;
+        }
 
-        // pohyb hráče
         if (Mouse.current.leftButton.wasPressedThisFrame)
         {
             Vector2 mousePos = Mouse.current.position.ReadValue();
@@ -37,6 +48,20 @@ public class Player : Entity
         {
             isMoving = false;
         }
+
+        if (isMoving)
+        {
+            Vector2 direction = (targetPos - transform.position).normalized;
+            anim.SetFloat("MoveX", direction.x);
+            anim.SetFloat("MoveY", direction.y);
+        }
+
+        anim.SetBool("isMoving", isMoving);
+    }
+
+    void FixedUpdate()
+    {
+        if (!GameManager.Instance.IsGameActive() || InventoryManager.Instance.isInventoryOpen) return;
 
         if (isMoving)
         {
